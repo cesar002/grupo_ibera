@@ -1,0 +1,114 @@
+---
+import { Image } from 'astro:assets';
+import GrupIberaImg from '../assets/imagenes/grupo_iberia.png';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Grupo Iberia</title>
+</head>
+<body class="bg-white">
+	<header class="w-full px-5 py-5 shadow flex items-center">
+		<Image src={GrupIberaImg} alt="Grupo Ibera" 
+			class="w-14"
+		/>
+	</header>
+	<main class="w-full min-h-screen py-9">
+		<section class="flex justify-center items-center flex-col gap-3">
+			<h1 class="text-[#073863] lg:text-6xl text-5xl font-semibold">
+				Grupo Iberia
+			</h1>
+			<h2 class="text-[#073863] text-xl font-medium">
+				DE ALCOHÓLICOS ANÓNIMOS
+			</h2>
+			<Image src={GrupIberaImg} alt="Grupo Ibera" 
+				class="lg:w-1/4 w-3/4 mt-10"
+			/>
+		</section>
+		<section class="w-full flex justify-center items-center mt-10">
+			<div class="xl:w-[60%] lg:w-[80%] w-full flex lg:flex-row flex-col gap-5 p-5">
+				<div class="lg:w-1/2 w-full flex flex-col gap-3">
+					<h5 class="text-center text-2xl uppercase text-[#073863] underline">
+						Ubicación
+					</h5>
+					<a class="text-[#073863] underline text-base" href="https://maps.app.goo.gl/jHyimmLXzj47ximy8">
+						Balderas 44, despacho 121, colonia Centro.
+					</a>
+					<span class="font-semibold text-sm">
+						*Metro cercano: Juárez
+					</span>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d235.1559995014581!2d-99.1473532!3d19.4341709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d53e296089%3A0x6677ff889c9112df!2sBalderas%2044%2C%20Colonia%20Centro%2C%20Centro%2C%20Cuauht%C3%A9moc%2C%2006050%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1728669710470!5m2!1ses!2smx" 
+						width="100%" height="350" 
+						style="border:0;" allowfullscreen="" loading="lazy" 
+						referrerpolicy="no-referrer-when-downgrade"
+					>
+					</iframe>
+				</div>
+				<div class="lg:w-1/2 w-full flex flex-col items-center gap-5">
+					<h5 class="text-center text-2xl uppercase text-[#073863]">
+						Horarios de sesión
+					</h5>
+					<ul class="list-disc">
+						<li class="my-2">Lunes - 19:30 a 21:00 horas</li>
+						<li class="my-2">Martes - 19:30 a 21:00 horas</li>
+						<li class="my-2">Miércoles - 19:30 a 21:00 horas</li>
+						<li class="my-2">Jueves - 19:30 a 21:00 horas</li>
+						<li class="my-2">Viernes - 19:30 a 21:00 horas</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="bg-[#202859] w-full p-5 flex flex-col justify-center items-center min-h-60 mt-10 gap-16">
+			<span class="md:text-3xl text-2xl text-white underline text-center">
+				Usted puede decidir, a través de este sencillo AUTODIAGNÓSTICO
+			</span>
+			<span class="text-2xl text-white underline mt text-center">
+				Ubica los grupos de AA en todo México
+			</span>
+		</section>
+		<section class="flex justify-center items-center w-full min-h-24 gap-3">
+			<a href="https://api.whatsapp.com/send?phone=525512884373&text=Me%20interesa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20Grupo%20Iberia%20de%20AA"
+				target="_blank"
+			>
+				<i class="fa-brands fa-square-whatsapp text-[#2ad168] text-5xl"></i>
+			</a>
+			<span class="text-[#202859] text-5xl font-light">
+				Contáctanos
+			</span>
+		</section>
+	</main>
+	<footer class="bg-[#202859] w-full min-h-[10rem] flex justify-center items-center p-5">
+		<div class="xl:w-[60%] lg:w-[80%] w-full flex md:flex-row flex-col gap-5 justify-between items-center">
+			<div class="flex items-center gap-3 text-white text-xl">
+				<a href="https://www.facebook.com/aacentralmexicana/" target="_blank" rel="noopener noreferrer">
+					<i class="fa-brands fa-facebook"></i>
+				</a>
+				<a href="https://twitter.com/AAMexico" target="_blank" rel="noopener noreferrer">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+				<a href="https://www.youtube.com/c/AAMexicoOficial" target="_blank" rel="noopener noreferrer">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+				<a href="https://www.instagram.com/alcoholicosanonimosmexico/" target="_blank" rel="noopener noreferrer">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</div>
+			<div class="flex flex-col gap-1 justify-center items-center text-white text-xs">
+				<a href="https://www.aamexico.org.mx/" target="_blank" rel="noopener noreferrer">
+					https://www.aamexico.org.mx/
+				</a>
+				<span>
+					Central Mexicana de Servicios Generales de AA, AC
+				</span>
+				<span>
+					Huatabampo 18 Col. Roma Sur Cuauhtémoc CDMX
+				</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
